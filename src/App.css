@@ -1,0 +1,290 @@
+/* Islamic Wedding Countdown Styles */
+
+body {
+  background: linear-gradient(135deg, #f8f6f1 0%, #e8e3d9 100%);
+  font-family: 'Noto Naskh Arabic', 'Scheherazade New', 'Tajawal', 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  color: #3a3a2c;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.wedding-app {
+  max-width: 600px;
+  margin: 40px auto 0 auto;
+  background: rgba(255,255,255,0.95);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(180, 170, 120, 0.12);
+  padding: 32px 20px 40px 20px;
+  border: 1.5px solid #e6e0c7;
+  animation: fadeIn 1.5s;
+}
+
+.wedding-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.calligraphy {
+  font-family: 'Scheherazade New', 'Noto Naskh Arabic', serif;
+  font-size: 1.5rem;
+  color: #bfa14a;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.wedding-title {
+  font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.2rem;
+  color: #3a3a2c;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.names-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+.name {
+  font-family: 'Tajawal', 'Quicksand', Arial, sans-serif;
+  color: #2d5c3b;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.and {
+  color: #bfa14a;
+  font-size: 1.5rem;
+  font-family: 'Scheherazade New', serif;
+}
+.special-line {
+  color: #bfa14a;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-family: 'Scheherazade New', serif;
+}
+
+.date-highlight {
+  background: linear-gradient(90deg, #f7f3e9 60%, #e6f3e6 100%);
+  border-radius: 12px;
+  padding: 12px 18px;
+  margin: 0 auto 24px auto;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(191, 161, 74, 0.07);
+  font-size: 1.1rem;
+}
+.date-label {
+  color: #bfa14a;
+  font-weight: 600;
+  margin-right: 8px;
+}
+.date-value {
+  color: #2d5c3b;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.countdown-box {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 28px;
+  background: #f8f6f1;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(191, 161, 74, 0.06);
+  padding: 18px 0;
+  animation: fadeIn 1.5s;
+}
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+.countdown-num {
+  font-size: 2.1rem;
+  color: #bfa14a;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 2px;
+  letter-spacing: 1px;
+}
+.countdown-label {
+  color: #2d5c3b;
+  font-size: 1rem;
+  font-family: 'Tajawal', Arial, sans-serif;
+}
+
+.message-section {
+  margin: 0 auto 28px auto;
+  text-align: center;
+  background: #fffbe9;
+  border-radius: 14px;
+  padding: 18px 10px 14px 10px;
+  box-shadow: 0 2px 8px rgba(191, 161, 74, 0.06);
+  min-height: 80px;
+  transition: background 0.5s;
+}
+.message-lang-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.lang-btn {
+  background: #e6f3e6;
+  color: #2d5c3b;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  font-family: 'Tajawal', Arial, sans-serif;
+}
+.lang-btn.active, .lang-btn:hover {
+  background: #bfa14a;
+  color: #fff;
+}
+.message-text {
+  font-size: 1.2rem;
+  color: #3a3a2c;
+  font-family: 'Scheherazade New', 'Tajawal', Arial, serif;
+  min-height: 32px;
+  transition: color 0.5s;
+}
+
+.duas-section {
+  background: #f7f3e9;
+  border-radius: 14px;
+  padding: 18px 10px 10px 10px;
+  box-shadow: 0 2px 8px rgba(191, 161, 74, 0.06);
+  margin: 0 auto 0 auto;
+  text-align: center;
+  animation: slideIn 1.2s;
+}
+.duas-title {
+  color: #2d5c3b;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+.duas-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dua-item {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+.dua-arabic {
+  display: block;
+  font-family: 'Scheherazade New', 'Noto Naskh Arabic', serif;
+  color: #bfa14a;
+  font-size: 1.15rem;
+  margin-bottom: 2px;
+}
+.dua-translation {
+  display: block;
+  color: #2d5c3b;
+  font-size: 1rem;
+  font-family: 'Tajawal', Arial, sans-serif;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+  animation: fadeIn 1.2s;
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.slide-in {
+  animation: slideIn 1.2s;
+}
+
+@media (max-width: 700px) {
+  .wedding-app {
+    padding: 12px 2vw 24px 2vw;
+    max-width: 98vw;
+  }
+  .countdown-box {
+    gap: 8px;
+    padding: 10px 0;
+  }
+  .date-highlight {
+    font-size: 1rem;
+    padding: 8px 4px;
+  }
+}
+    border-radius: 6px;
+    background: var(--social-bg);
+    display: flex;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: var(--shadow);
+    }
+    .button-icon {
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      flex: 1 1 calc(50% - 8px);
+    }
+
+    a {
+      width: 100%;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+  }
+}
+
+#spacer {
+  height: 88px;
+  border-top: 1px solid var(--border);
+  @media (max-width: 1024px) {
+    height: 48px;
+  }
+}
+
+.ticks {
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4.5px;
+    border: 5px solid transparent;
+  }
+
+  &::before {
+    left: 0;
+    border-left-color: var(--border);
+  }
+  &::after {
+    right: 0;
+    border-right-color: var(--border);
+  }
+}
