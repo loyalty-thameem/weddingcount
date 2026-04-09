@@ -224,7 +224,40 @@ body {
     padding: 8px 4px;
   }
 }
-/* Removed invalid CSS block that was outside of any selector */
+
+/* Converted from SCSS-like syntax to valid CSS */
+.social-link {
+  border-radius: 6px;
+  background: var(--social-bg);
+  display: flex;
+  padding: 6px 12px;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: box-shadow 0.3s;
+}
+.social-link:hover {
+  box-shadow: var(--shadow);
+}
+.social-link .button-icon {
+  height: 18px;
+  width: 18px;
+}
+@media (max-width: 1024px) {
+  .social-list {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .social-list li {
+    flex: 1 1 calc(50% - 8px);
+  }
+  .social-link {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+}
 
 #spacer {
   height: 88px;
